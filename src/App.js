@@ -13,8 +13,20 @@ function App() {
 
       <div className="main-block">
         <div className="left-block">
-
+          <div className="search-box">
+            <input className="search"/>
+          </div>
           <div className="user-block">
+            <User
+            img={image}
+            name="Kyouma"
+            lastmessage="хуй"
+            time="22:00"/>
+            <User
+            img={image}
+            name="Kyouma"
+            lastmessage="хуй"
+            time="22:00"/>
             <User
             img={image}
             name="Kyouma"
