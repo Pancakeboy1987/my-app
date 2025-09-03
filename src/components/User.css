@@ -1,0 +1,36 @@
+.user-card{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    background-color: rgb(85, 15, 190);
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid black;
+    
+}
+
+
+.avatar{
+    width: 50px;        /* уменьшаем ширину */
+    height: 50px;       /* уменьшаем высоту */
+    object-fit: cover;   /* обрезает изображение по контейнеру, не искажая */
+    border-radius: 50%;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    margin-top:9px;
+}
+
+.message-box > * {
+    margin:0;
+    line-height: 1;
+}
+
+.img-box{
+    display: flex;
+    align-items: center;
+}

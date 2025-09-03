@@ -1,5 +1,7 @@
+import image from "./Max_logo_2025.png"
 
 import './App.css';
+import User from './components/user'
 
 function App() {
   return (
@@ -11,10 +13,31 @@ function App() {
 
       <div className="main-block">
         <div className="left-block">
-          <p>
-          This is the start
-          </p>
+
+          <div className="user-block">
+            <User
+            img={image}
+            name="Kyouma"
+            lastmessage="хуй"
+            time="22:00"/>
+            <User
+            img={image}
+            name="Kyouma"
+            lastmessage="хуй"
+            time="22:00"/>
+            <User
+            img={image}
+            name="Kyouma"
+            lastmessage="хуй"
+            time="22:00"/>
+
+          
+          
+          </div>
+
         </div>
+
+
         <div className="right-block">
 
           <a

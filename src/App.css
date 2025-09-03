@@ -29,17 +29,29 @@
 }
 
 .left-block{
-  flex: 1; /* Занимает оставшееся пространство */
-  padding: 20px;
+ /* Занимает оставшееся пространство */
   background: #f5f5f5;
   /* Можно добавить максимальную ширину если нужно */
-  max-width: 40%;
+  max-width: 60%;
+
+
+
 }
+
 
 .right-block {
   flex: 0 0 80%; /* Фиксированная ширина 60% */
   background: #0088cc; /* Telegram-like blue */
   display: flex;
+
+}
+
+.user-block{
+  display:flex;
+  flex-direction: column;
+  width:120%;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  background: #3b404b;
 }
