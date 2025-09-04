@@ -1,4 +1,5 @@
 import image from "./Max_logo_2025.png"
+import { useState } from 'react';
 
 import './App.css';
 import User from './components/user'
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
 
       <div className="upper-block">
-        janwcjn
+        kuritsagram
       </div>
 
       <div className="main-block">

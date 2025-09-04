@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -20,13 +21,13 @@
 }
 
 .upper-block{
-  padding: 30px;
+  padding: 4px;
   background-color: #3b404b; ;
 }
 
 .main-block{
   display: flex;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .left-block{
@@ -42,8 +43,8 @@
 
 
 .right-block {
-  flex: 0 0 80%; /* Фиксированная ширина 60% */
-  background: #740505; /* Telegram-like blue */
+  flex: 0 0 80%; 
+  background: #740505;
   display: flex;
   padding-top: 10px;
 
@@ -70,5 +71,6 @@
   background: linear-gradient(rgb(40, 44, 52),rgb(31, 33, 39));
   border-radius: 20px;
   width:170px;
+  color: azure;
   
 }
