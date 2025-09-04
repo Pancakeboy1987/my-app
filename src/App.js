@@ -1,5 +1,6 @@
 import image from "./Max_logo_2025.png"
 import { useState } from 'react';
+import ChatWindow from './components/ChatWindow'
 
 import './App.css';
 import User from './components/user'
@@ -62,6 +63,7 @@ function App() {
           Learn React
           
           </a>
+          <ChatWindow/>
         </div>
       </div>
 
