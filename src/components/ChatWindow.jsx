@@ -1,6 +1,6 @@
 import {messages} from "./Message"
 import { useState } from "react"
-
+import "./ChatWindow.css"
 
 
 export default function ChatWindow(){
@@ -9,11 +9,11 @@ export default function ChatWindow(){
      //преобразования
      const messageList = mssges.map(msg =>
         <div key={msg.id} className={`message ${msg.sender}`}>
-               <span>{msg.text}</span>
-            <small>{msg.timestamp.toLocaleString()}</small> 
+            <div className="text-box">{msg.text}</div>
+            <div className="time-box">{msg.timestamp.toLocaleTimeString()}</div>
             </div>
      );
-     return <div>{messageList}</div>
+     return <div className="message-list">{messageList}</div>
 
 
 

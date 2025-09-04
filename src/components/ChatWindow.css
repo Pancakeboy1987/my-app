@@ -1,0 +1,38 @@
+.message-list{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    margin-left: 10px;
+}
+
+.message.me{
+    background: red;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    width: fit-content;
+    position: relative
+
+}
+
+.text-box{
+    text-align: left;
+    margin-left: -6px;
+   
+}
+
+.time-box{
+
+    width:10px;
+    font-weight: 500;
+    font-size: 8px;
+    width: fit-content;
+    text-align: end;
+    margin-bottom: -20px;
+    margin-right: -10px;
+    
+    
+}
