@@ -16,20 +16,6 @@ export default function ChatWindow(){
      return <div className="message-list">{messageList}</div>
 
 
-
-//     function MessageList({messages}){
-//         return(
-//             <div className="message-list">  // Для скролла
-//           {messages.map((msg) => (
-//             <div key={msg.id} className={`message ${msg.sender}`}>
-//               <span>{msg.text}</span>
-//               <small>{msg.timestamp.toLocaleTimeString()}</small>  // Отображение времени
-//             </div>
-//           ))}
-//         </div>
-//         )
-//     }
-
 }
 
 //проба пера

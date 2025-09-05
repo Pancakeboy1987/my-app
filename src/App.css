@@ -47,7 +47,13 @@
   background: #740505;
   display: flex;
   padding-top: 10px;
+  flex-direction: column;
 
+}
+
+.chat-block{
+  padding-bottom: 70px;
+  margin-bottom:80px ;
 }
 
 .user-block{
@@ -74,3 +80,4 @@
   color: azure;
   
 }
+
