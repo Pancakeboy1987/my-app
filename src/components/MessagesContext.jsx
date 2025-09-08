@@ -4,9 +4,12 @@
 import { createContext, useContext, useState } from "react";
 import { messages as initialMessages} from "./Message";
 
+
+//создаем переменную для контекста
 const MessagesContext = createContext(null)
 
-
+//создаем провайдер который будет давать всему в своих внутренних пределах массив с объектами
+// и функцию котораая их создает
 export default function MessagesProvider({children}){
     const [mssges,setMessages] = useState(initialMessages)
 
@@ -27,6 +30,7 @@ export default function MessagesProvider({children}){
     );
 }
 
+//хук через который мы будем обращатья к массиву и функции
 export function useMessages() {
     const ctx = useContext(MessagesContext);
     if (!ctx) throw new Error("useMessages must be used within a MessagesProvider");
