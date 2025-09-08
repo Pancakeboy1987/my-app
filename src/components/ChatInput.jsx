@@ -2,13 +2,29 @@ import { useState } from "react";
 import './ChatInput.css'
 
 export default function ChatInput(){
-    const [text, setText] = useState('')
+    const [inputText, setInputText] = useState('')
     const [status,setStatus] = useState('typing')
+    const [objects, setObjects] = useState([])
+
 
 
     function handleTextareaChange(e) {
-        setText(e.target.value);
+        setInputText(e.target.value);
       }
+
+    function handeSubmit(e){
+        e.preventDefault();
+        if (inputText.trim()===''){
+            return
+        }
+
+        const myNewMessage = {
+            id:Date.now(),
+            text: inputText,
+            date: new Date().toLocaleTimeString(),
+        }
+
+    }
 
 
 
@@ -16,7 +32,7 @@ export default function ChatInput(){
         <div className="my-text-block">
             <form >
                 <input type="text" className="text-form"
-                 value={text}
+                 value={inputText}
                 onChange={handleTextareaChange}
                 placeholder="type text..." />
                 <button className='text-button'>
