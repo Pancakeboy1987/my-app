@@ -1,6 +1,7 @@
 import image from "./Max_logo_2025.png"
 import { useState } from 'react';
 import ChatWindow from './components/ChatWindow'
+import ChatInput from "./components/ChatInput";
 
 import './App.css';
 import User from './components/user'
@@ -59,9 +60,8 @@ function App() {
           </div>
 
           <div className="typing-box">
-            dzcascadca
+            <ChatInput/>
           </div>
-
         </div>
       </div>
 
