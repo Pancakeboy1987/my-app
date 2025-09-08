@@ -19,12 +19,13 @@ export default function ChatInput({mssges,setMessages}){
         }
 
         const myNewMessage = {
-            id:Date.now(),
+            id:Date.now()+11,
             text: inputText,
-            date: new Date().toLocaleTimeString(),
+            timestamp: new Date().toLocaleTimeString(),
+            sender:"me"
         }
         
-        setObjects([...objects, myNewMessage])
+        setMessages([...mssges,myNewMessage])
 
         setInputText('')
 
