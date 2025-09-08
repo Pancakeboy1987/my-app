@@ -15,8 +15,10 @@ export default function ChatInput(){
       return(
         <div className="my-text-block">
             <form >
-                <textarea className="text-form" value={text}
-                    onChange={handleTextareaChange} />
+                <input type="text" className="text-form"
+                 value={text}
+                onChange={handleTextareaChange}
+                placeholder="type text..." />
                 <button className='text-button'>
                     s
                 </button>
