@@ -1,11 +1,12 @@
 import {messages} from "./Message"
 import { useState } from "react"
+import { useMessages } from "./MessagesContext";
 import "./ChatWindow.css"
 
 
 export default function ChatWindow(){
-     const [mssges,setMessages] = useState(messages)
-
+     //const [mssges,setMessages] = useState(messages)
+     const { mssges } = useMessages();
      //преобразования
      const messageList = mssges.map(msg =>
         <div key={msg.id} className={`message ${msg.sender}`}>

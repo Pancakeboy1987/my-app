@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { useMessages } from "./MessagesContext";
 import './ChatInput.css'
 
 
+
+///проблема в том что новые объекты есть в стейте но не передаются в виндоу
 export default function ChatInput({mssges,setMessages}){
     const [inputText, setInputText] = useState('')
     const [status,setStatus] = useState('typing')
+    const { addMessage } = useMessages();
 
 
 
@@ -12,20 +16,12 @@ export default function ChatInput({mssges,setMessages}){
         setInputText(e.target.value);
       }
 
-    function handeSubmit(e){
+    function handleSubmit(e){
         e.preventDefault();
         if (inputText.trim()===''){
             return
         }
-
-        const myNewMessage = {
-            id:Date.now()+11,
-            text: inputText,
-            timestamp: new Date().toLocaleTimeString(),
-            sender:"me"
-        }
-        
-        setMessages([...mssges,myNewMessage])
+        addMessage(inputText,"me")
 
         setInputText('')
 
@@ -35,12 +31,12 @@ export default function ChatInput({mssges,setMessages}){
 
       return(
         <div className="my-text-block">
-            <form >
+            <form onSubmit={handleSubmit}>
                 <input type="text" className="text-form"
                  value={inputText}
                 onChange={handleTextareaChange}
                 placeholder="type text..." />
-                <button className='text-button'>
+                <button className='text-button' type="submit">
                     s
                 </button>
             </form>
