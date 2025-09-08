@@ -2,10 +2,9 @@ import { useState } from "react";
 import './ChatInput.css'
 
 
-export default function ChatInput(){
+export default function ChatInput({mssges,setMessages}){
     const [inputText, setInputText] = useState('')
     const [status,setStatus] = useState('typing')
-    const [objects, setObjects] = useState([])
 
 
 
