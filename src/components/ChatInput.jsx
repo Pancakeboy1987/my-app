@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ChatInput.css'
 
 export default function ChatInput(){
     const [text, setText] = useState('')
@@ -13,10 +14,10 @@ export default function ChatInput(){
 
       return(
         <div className="my-text-block">
-            <form>
-                <textarea value={text}
+            <form >
+                <textarea className="text-form" value={text}
                     onChange={handleTextareaChange} />
-                <button>
+                <button className='text-button'>
                     s
                 </button>
             </form>

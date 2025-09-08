@@ -1,0 +1,6 @@
+.text-form{
+  width: 500px; /* Sets a fixed width */
+  height: auto; /* Adjusts height based on content */
+  margin: 0 auto;
+  background: #3b404b;
+}
