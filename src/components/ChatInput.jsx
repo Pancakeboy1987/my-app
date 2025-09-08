@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './ChatInput.css'
 
+
 export default function ChatInput(){
     const [inputText, setInputText] = useState('')
     const [status,setStatus] = useState('typing')
