@@ -3,4 +3,8 @@
   height: auto; /* Adjusts height based on content */
   margin: 0 auto;
   background: #3b404b;
+  border: 0ch;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: large;
 }

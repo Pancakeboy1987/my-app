@@ -23,6 +23,10 @@ export default function ChatInput(){
             text: inputText,
             date: new Date().toLocaleTimeString(),
         }
+        
+        setObjects([...objects, myNewMessage])
+
+        setInputText('')
 
     }
 
