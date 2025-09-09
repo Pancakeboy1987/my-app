@@ -4,7 +4,15 @@
   margin: 0 auto;
   background: #3b404b;
   border: 0ch;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   font-weight: 400;
   font-size: large;
+}
+
+.text-button{
+  border-radius: 50px;
+  height: 35px;
+  width:35px;
+  border: 0ch;
+  background: #24272e
 }
