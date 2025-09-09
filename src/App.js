@@ -58,7 +58,7 @@ function App() {
           <div className="right-block">
             <div className="chat-block">
               <ChatWindow/>
-              <div> fwefewfewfew </div>
+              
             </div>
 
             <div className="typing-box">

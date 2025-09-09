@@ -4,16 +4,16 @@ export  const messages = [{
     id: Date.now()+1,
     text: 'Привет',        // Основной контент
     timestamp: new Date() || '2025-09-04T12:00:00Z',  // Время отправки (Date объект или ISO строка для сортировки и отображения)
-    sender: 'me' || 'other'
+    sender: 'other'
 },{
     id: Date.now()+2,
     text: 'Прив',        // Основной контент
     timestamp: new Date(),  // Время отправки (Date объект или ISO строка для сортировки и отображения)
-    sender: 'me' || 'other'
+    sender: 'other'
 },{
     id: Date.now()+3,
     text: 'чо как',        // Основной контент
     timestamp: new Date() || '2025-09-04T12:05:00Z',  // Время отправки (Date объект или ISO строка для сортировки и отображения)
-    sender: 'me' || 'other'
+    sender: 'other'
 }
 ]
