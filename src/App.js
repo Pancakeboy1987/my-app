@@ -5,6 +5,7 @@ import ChatInput from "./components/ChatInput";
 import  MessagesProvider  from "./components/MessagesContext";
 import ChatRender from "./components/ChatRender";
 
+
 import './components/App.css';
 import User from './components/user'
 
@@ -61,14 +62,7 @@ function App() {
 
 
           <div className="right-block">
-            <div className="chat-block">
-              <ChatWindow/>
-              
-            </div>
-
-            <div className="typing-box">
-              <ChatInput/>
-            </div>
+            <ChatRender/>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import './App.css';
 
 export default function ChatRender(){
     return(
-        <div className='chat-render-block'>
+        <>
             <div className="chat-block">
               <ChatWindow/>
               
@@ -13,6 +13,6 @@ export default function ChatRender(){
             <div className="typing-box">
               <ChatInput/>
             </div>
-        </div>
+        </>
     )
 }
