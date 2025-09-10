@@ -1,5 +1,5 @@
 .text-form{
-  width: 500px; /* Sets a fixed width */
+  width: 800px; /* Sets a fixed width */
   height: auto; /* Adjusts height based on content */
   margin: 0 auto;
   background: #3b404b;
@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: large;
   outline: none;
+  color: #fcf9f9;
 }
 
 .text-button{
