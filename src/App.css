@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 
 }
 
@@ -28,14 +29,15 @@
 .main-block{
   display: flex;
   padding-top: 0px;
-  height:700px;
+  max-width: 1500px;
+  height: 100vh;
 }
 
 .left-block{
  /* Занимает оставшееся пространство */
   background: rgb(23, 23, 23);
   /* Можно добавить максимальную ширину если нужно */
-  max-width: 60%;
+  max-width: 80%;
 
 
 
@@ -49,6 +51,7 @@
   display: flex;
   padding-top: 10px;
   flex-direction: column;
+  min-width: 60%;
   max-width: 80%;
 
 
@@ -56,6 +59,8 @@
 
 .chat-block{
   height: 660px;
+  flex: 1;                 /* занимает всё свободное место */
+  overflow-y: auto;  
 }
 
 .user-block{
@@ -72,6 +77,10 @@
 .typing-box{
   height:40px;
   background: #3b404b;
+  display: flex;
+  justify-content: center;
+ 
+
 
 }
 
