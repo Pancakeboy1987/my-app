@@ -3,8 +3,9 @@ import { useState } from 'react';
 import ChatWindow from './components/ChatWindow'
 import ChatInput from "./components/ChatInput";
 import  MessagesProvider  from "./components/MessagesContext";
+import ChatRender from "./components/ChatRender";
 
-import './App.css';
+import './components/App.css';
 import User from './components/user'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
         <div className="main-block">
           <div className="menu-block">
-            
+
           </div>
 
           <div className="left-block">
