@@ -17,6 +17,10 @@ function App() {
         </div>
 
         <div className="main-block">
+          <div className="menu-block">
+            
+          </div>
+
           <div className="left-block">
             <div className="search-box">
               <input className="search"/>
