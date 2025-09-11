@@ -29,7 +29,7 @@
 .main-block{
   display: flex;
   padding-top: 0px;
-  max-width: 1500px;
+  max-width: 1600px;
   height: 100vh;
 }
 
@@ -52,7 +52,7 @@
   padding-top: 10px;
   flex-direction: column;
   min-width: 60%;
-  max-width: 80%;
+  max-width: 90%;
 
 
 }
